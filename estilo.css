@@ -311,6 +311,14 @@ footer .line-footer p a{
 }
 
 @media screen and (max-width: 1020px){
+    .logo{
+        img{
+            width: 100px;
+            border-radius: 50%;
+        }
+    }
+
+
     .flex{
         flex-direction: column-reverse;
     }
