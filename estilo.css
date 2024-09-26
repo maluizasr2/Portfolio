@@ -145,7 +145,6 @@ section .sobre .flex{
 }
 
 .sobre .txt-sobre h2 span{
-    color: rgba(225, 225, 225);
     display: block;
 }
 
@@ -155,7 +154,7 @@ section .sobre .flex{
     padding: 8px;
 }
 
-.sobre .txt-sobre .btn-social button{
+.btn-social button{
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -169,7 +168,7 @@ section .sobre .flex{
 
 section .projetos{
     padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #fff;
+    box-shadow: 0 0 40px 10px #ffffff1d;
 }
 
 
@@ -191,6 +190,7 @@ section .projetos{
     cursor: pointer;
     border-radius: 40px;
     position: relative;
+    margin: 20px;
 }
 
 .img-port{
@@ -205,9 +205,11 @@ section .projetos{
     background-position: 100% 100%;
 }
 
-.flex{
+.flex-2{
     justify-content: space-around;
     margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .overlay{
@@ -252,10 +254,12 @@ form input, form textarea{
     background-color: #242424;
     border: 0;
     outline: 0;
-    padding: 20px 15px;
+    padding: 30px 15px;
     border-radius: 15px;
     color: #fff;
     font-size: 18px;
+    padding-top: 30px;
+    margin: 20px;
 }
 
 form textarea{
@@ -275,4 +279,92 @@ form .btn-enviar input{
     font-weight: 700;
     cursor: pointer;
     transition: .2s;
+}
+
+footer{
+    padding: 60px 4%;
+    img{
+        width: 100px;
+        border-radius: 50%;
+    }
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid #fff;
+}
+
+footer .line-footer p i{
+    color: #fff;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: #fff;
+}
+
+@media screen and (max-width: 1020px){
+    .flex{
+        flex-direction: column-reverse;
+    }
+
+    .menu, .botao-de-contato{
+        display: none;
+    }
+
+    section.topo-do-site .flex{
+        gap: 40px;
+    }
+
+    section.topo-do-site{
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1{
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo-site img{
+        width: 100%;
+    }
+
+    section.topo-do-site .flex{
+        align-items: center;
+        justify-content: center;
+        gap: 90px;
+    }
+
+    section .sobre{
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2{
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+    
+    .btn-social{
+        text-align: center;
+    }
+
+    section .projetos{
+        padding: 80px 8%;
+    }
+
+    footer .flex{
+        flex-direction: column;
+    }
+
+    footer .line-footer{
+        text-align: center;
+    }
+    
 }
